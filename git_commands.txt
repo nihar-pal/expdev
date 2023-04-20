@@ -16,3 +16,87 @@ git pull https://github.com/akashxyz/jenkins.git
 git pull --force
 git fetch origin
 git clone https://github.com/akashxyz/jenkins.git
+
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop (master)
+$ mkdir xp
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop (master)
+$ cd xp
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git init
+Initialized empty Git repository in C:/Users/menon/OneDrive/Desktop/xp/.git/
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git add .
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sdfdf.html
+        sss.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git add .
+
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git add sdfdf.html sss.html
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sdfdf.html
+        new file:   sss.html
+
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git commit -m "first commit"
+[master (root-commit) df853ff] first commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 sdfdf.html
+ create mode 100644 sss.html
+
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (master)
+$ git branch -M main
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (main)
+$ git remote add origin https://github.com/Akash0420/dev.git
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (main)
+$ git push -u origin main
+To https://github.com/Akash0420/dev.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Akash0420/dev.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+menon@LAPTOP-KF7CD1KN MINGW32 ~/OneDrive/Desktop/xp (main)
+$ git remote add origin https://github.com/Akash0420/xpp.git
+error: remote origin already exists.
+

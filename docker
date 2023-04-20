@@ -12,4 +12,4 @@ docker run --name=php -p=3000:3000 akashmenon420/foldername ONLY RUN MAYBE
  
 FOR UBUNTU EXP-
 docker pull ubuntu
-docker build . -t akashmenon420/foldername
+docker build . -t akashmenon420/ubuntu

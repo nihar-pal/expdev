@@ -1,0 +1,19 @@
+JENKINS 1- 
+open jenkins
+new item -> freestyle -> configure
+advanced  -> use custom workspace -> Directory -> eg_  C:\Users\menon\IdeaProjects\HW\src
+build steps - > Execute Windows batch command - 
+1. javac Main.java
+2. java Main
+
+Dashboard -> Manage Jenkins -> Global tool config -
+write jdk path - eg_ C:\Program Files\Java\jdk-17 
+build now
+
+Jenkins 2-
+same as above
+configure
+build triggers -> build periodically 
+*/2 * * * *
+build now
+

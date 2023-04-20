@@ -1,4 +1,6 @@
 open gitbash
+git config --global user.name "pujagit"
+git config --global user.email"padiya.puja@rait.ac.in"
 cd Desktop
 cd exp1
 git init (o/p - initialized emply git repository to C:/Users/xyz/exp1/.git/

@@ -1,0 +1,15 @@
+open gitbash
+cd Desktop
+cd exp1
+git init (o/p - initialized emply git repository to C:/Users/xyz/exp1/.git/
+git add
+git status
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/akashxyz/devops-practical.git
+git push -u origin main
+git pull
+git pull https://github.com/akashxyz/jenkins.git
+git pull --force
+git fetch origin
+git clone https://github.com/akashxyz/jenkins.git

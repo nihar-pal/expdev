@@ -1,0 +1,15 @@
+in hello.php -
+<html>
+<?php echo"Hello world from php container ">
+</html>
+in Dockerfile - 
+FROM php
+COPY ./ ./
+EXPOSE 3000
+CMD ["php","-S","0.0.0.0:3000"]
+docker build . -t akashmenon420/foldername
+docker run --name=php -p=3000:3000 akashmenon420/foldername ONLY RUN MAYBE
+ 
+FOR UBUNTU EXP-
+docker pull ubuntu
+docker build . -t akashmenon420/foldername

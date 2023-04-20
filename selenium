@@ -1,0 +1,40 @@
+download python
+download pycharm
+download chromedriver -  https://chromedriver.storage.googleapis.com/index.html?path=79.0.3945.36/
+open cmd p
+mkdir my-webapp-test
+cd my-webapp-test
+py -m venv venv  OR python -m venv venv
+.\venv\Scripts\activate OR source venv/bin/activate
+pip install selenium OR Python -m pip install -U Selenium
+download chromedriver now , cehcking chrom version
+open pycharm, new project Seleniumtest 
+new -> directory -> name it demo
+demo -> new -> python file -> name it sample1
+write below code in sample1-
+1. from Selenium import webdriver
+2. import time
+3. from Selenium.webdriver.common.keys import Keys
+4. print("sample test case started")
+5. driver = webdriver.Chrome()
+6. #driver=webdriver.firefox()
+7. #driver=webdriver.ie()
+8. #maximize the window size
+9. driver.maximize_window()
+10. #navigate to the url
+11. driver.get("https://www.google.com/")
+12. #identify the Google search text box and enter the value
+13. driver.find_element_by_name("q").send_keys("javatpoint")
+14. time.sleep(3)
+15. #click on the Google search button
+16. driver.find_element_by_name("btnK").send_keys(Keys.ENTER)
+17. time.sleep(3)
+18. #close the browser
+19. driver.close()
+20. print("sample test case successfully completed") 
+Right-click on the Project(SeleniumTest) → New → Directory -> name it browsers
+And, we will add all the driver's executable files in the Browsers folder manually.
+For this, we will copy the chrome driver exe file from the Python folder, and paste in the Browser folder
+Now go to PyCharm IDE, and copy the Absolute path of chromdriver.exe file Replace the statement "driver = webdriver.Chrome()" with a statement given below:
+driver=webdriver.Chrome(r"C:\Users\JTP\PycharmProjects\SeleniumTest\Browsers\chromedriver.exe")
+run the sample1

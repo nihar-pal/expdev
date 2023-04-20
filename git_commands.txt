@@ -5,6 +5,7 @@ cd Desktop
 cd exp1
 git init (o/p - initialized emply git repository to C:/Users/xyz/exp1/.git/
 git add
+git add .
 git status
 git commit -m "first commit"
 git branch -M main
